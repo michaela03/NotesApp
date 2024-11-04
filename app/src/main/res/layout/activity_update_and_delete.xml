@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="note"
+            type="com.example.notesapp.models.Note" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:hint="Заглавие" />
+
+        <EditText
+            android:id="@+id/etBody"
+            android:layout_width="match_parent"
+            android:layout_height="313dp"
+            android:hint="Съдържание"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Актуализирай" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изтрий" />
+    </LinearLayout>
+</layout>
